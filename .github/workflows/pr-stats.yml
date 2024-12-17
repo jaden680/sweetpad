@@ -11,7 +11,7 @@ jobs:
       - name: PR Stats
         uses: "naver/pr-stats@v1.0.0"
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.API_GITHUB_TOKEN }}
           period: "2024-01-01~"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
